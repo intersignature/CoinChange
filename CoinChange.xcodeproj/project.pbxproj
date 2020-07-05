@@ -13,6 +13,10 @@
 		35744BAA24B0CCD000092AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35744BA924B0CCD000092AAE /* Assets.xcassets */; };
 		35744BAD24B0CCD000092AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35744BAB24B0CCD000092AAE /* LaunchScreen.storyboard */; };
 		35744BB824B0CCD000092AAE /* CoinChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35744BB724B0CCD000092AAE /* CoinChangeTests.swift */; };
+		35744BC424B0D08500092AAE /* InputTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35744BC324B0D08500092AAE /* InputTextfield.swift */; };
+		35744BC824B0DAE200092AAE /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35744BC624B0DAE200092AAE /* CoinTableViewCell.swift */; };
+		35744BC924B0DAE200092AAE /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35744BC724B0DAE200092AAE /* CoinTableViewCell.xib */; };
+		35744BCB24B0DCB800092AAE /* CoinChangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35744BCA24B0DCB800092AAE /* CoinChangeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		35744BB324B0CCD000092AAE /* CoinChangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinChangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35744BB724B0CCD000092AAE /* CoinChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinChangeTests.swift; sourceTree = "<group>"; };
 		35744BB924B0CCD000092AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35744BC324B0D08500092AAE /* InputTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextfield.swift; sourceTree = "<group>"; };
+		35744BC624B0DAE200092AAE /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		35744BC724B0DAE200092AAE /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
+		35744BCA24B0DCB800092AAE /* CoinChangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinChangeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,13 @@
 			children = (
 				35744BA024B0CCCF00092AAE /* AppDelegate.swift */,
 				35744BA424B0CCCF00092AAE /* ViewController.swift */,
+				35744BCA24B0DCB800092AAE /* CoinChangeViewModel.swift */,
+				35744BC524B0DA7600092AAE /* coinCell */,
 				35744BA624B0CCCF00092AAE /* Main.storyboard */,
 				35744BA924B0CCD000092AAE /* Assets.xcassets */,
 				35744BAB24B0CCD000092AAE /* LaunchScreen.storyboard */,
 				35744BAE24B0CCD000092AAE /* Info.plist */,
+				35744BC224B0D04F00092AAE /* Shared */,
 			);
 			path = CoinChange;
 			sourceTree = "<group>";
@@ -94,6 +105,23 @@
 				35744BB924B0CCD000092AAE /* Info.plist */,
 			);
 			path = CoinChangeTests;
+			sourceTree = "<group>";
+		};
+		35744BC224B0D04F00092AAE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				35744BC324B0D08500092AAE /* InputTextfield.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		35744BC524B0DA7600092AAE /* coinCell */ = {
+			isa = PBXGroup;
+			children = (
+				35744BC624B0DAE200092AAE /* CoinTableViewCell.swift */,
+				35744BC724B0DAE200092AAE /* CoinTableViewCell.xib */,
+			);
+			path = coinCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +207,7 @@
 			files = (
 				35744BAD24B0CCD000092AAE /* LaunchScreen.storyboard in Resources */,
 				35744BAA24B0CCD000092AAE /* Assets.xcassets in Resources */,
+				35744BC924B0DAE200092AAE /* CoinTableViewCell.xib in Resources */,
 				35744BA824B0CCCF00092AAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +228,9 @@
 			files = (
 				35744BA524B0CCCF00092AAE /* ViewController.swift in Sources */,
 				35744BA124B0CCCF00092AAE /* AppDelegate.swift in Sources */,
+				35744BC824B0DAE200092AAE /* CoinTableViewCell.swift in Sources */,
+				35744BCB24B0DCB800092AAE /* CoinChangeViewModel.swift in Sources */,
+				35744BC424B0D08500092AAE /* InputTextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
